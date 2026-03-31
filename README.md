@@ -5,7 +5,8 @@ Este repositorio contiene el desarrollo integral de una estación meteorológica
 
 ### Datos:
 | Apellido y Nombre | E-mail | GitHub |
-| :---:VILLALBA, Valeri Nieves | :---:vnvillalba@escuelasproa.edu.ar |:---:[ver perfil](https://github.com/https://github.com/Nieves862) |
+| :---: | :---:|:---:|
+| VILLALBA, Valeri Nieves | vnvillalba@escuelasproa.edu.ar |[ver perfil](https://github.com/https://github.com/Nieves862) |
 
 ## Estructura del Proyecto
 * **analisis_ipynb/** Prototipado de datos en Google Colab.
