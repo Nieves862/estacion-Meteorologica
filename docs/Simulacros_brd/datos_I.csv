@@ -1,0 +1,6 @@
+﻿Nombre,Cantidad,Componente
+"U1",1," Arduino Uno R3"
+"D1",1,"Rojo LED"
+"R1, R2",2,"220 kΩ Resistencia"
+"U2",1," Sensor de temperatura [TMP36]"
+"D2",1,"Azul LED"
