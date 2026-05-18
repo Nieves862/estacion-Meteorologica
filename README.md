@@ -1,61 +1,60 @@
+# 🌦️ Proyecto: Estación Meteorológica — Eco-Intelligence
 
+> **Año de Desarrollo: 2026** > **Especialidad:** Programación III/ Robótica/ Club de Ciencias — 5to Año (Escuela PRoA)  
+> *Desarrollo integral de una estación meteorológica autónoma, conectando hardware, software y ciencia de datos.*
 
-------------------------------------------------------------------------------------------------------------------------
-# Proyecto: Estación Meteorológica - 2026 -
-------------------------------------------------------------------------------------------------------------------------
+---
 
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Proyecto: Estación Meteorológica - 2026 -
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Especialidad / 5to Año
-Este repositorio contiene el desarrollo integral de una estación meteorológica, integrando Hardware con Arduino UNO, Programación en Visual Studio Code en lenguaje Python y Análisis de datos con MySQL Workbench, Power BI y Google Colab.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Datos:
+## 📌 Presentación de la Profesora
 | Apellido y Nombre | E-mail | GitHub |
-| :---: | :---:|:---:|
-| VILLALBA, Valeria Nieves | vnvillalba@escuelasproa.edu.ar |[ver perfil](https://github.com/https://github.com/Nieves862) |
-------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------
+| :--- | :--- | :---: |
+| **VILLALBA, Valeria Nieves** | vnvillalba@escuelasproa.edu.ar | [🐙 Ver Perfil](https://github.com/Nieves862) |
 
+---
 
-------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------
+## 📂 Estructura del Proyecto
 
-## **Estructura del Proyecto
-* **analisis_ipynb/** Prototipado de datos en Google Colab.
-* **arduino_ino/** Código fuente para el Arduino UNO R3.
-* **dashboard_pbix/**: Reportes en Power BI.
-* **database_sql/**: Scripts de MySQL Workbench.
-* **docs/**: Documentación y leyes de software.
-* **python_app/**: Aplicación de escritorio (POO).
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+El repositorio está organizado de forma modular para reflejar las diferentes capas de la aplicación:
 
+* 📊 **`analisis_ipynb/`** — Cuadernos de Google Colab para el prototipado, limpieza de datasets y análisis exploratorio.
+* 🤖 **`arduino_ino/`** — Código fuente (.ino) desarrollado para el microcontrolador Arduino UNO R3 (hasta ahora Alertas y LCD).
+* 📈 **`dashboard_pbix/`** — Reportes y tableros interactivos en Power BI para el monitoreo histórico.
+* 🗄️ **`database_sql/`** — Scripts de creación, modelado y consultas en MySQL Workbench.
+* 📄 **`docs/`** — Documentación técnica del proyecto, requerimientos y leyes de software.
+* 🐍 **`python_app/`** — Aplicación de escritorio desarrollada en Python bajo el paradigma de **Programación Orientada a Objetos (POO)**.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## 🛠️ Tecnologías Utilizadas
-En este proyecto integramos diversas herramientas distribuidas en tres áreas clave:
+---
 
-### 🔬 Club de CIENCIAS (Análisis y Datos)
-* [Google Colab](https://colab.research.google.com/) - Prototipado de datos y uso de librerías científicas.
-* [MySQL Workbench](https://www.mysql.com/products/workbench/) - Diseño y gestión de la base de datos relacional.
-* [Power BI](https://powerbi.microsoft.com/) - Creación de dashboards interactivos para la visualización del clima.
+## 🛠️ Tecnologías e Integración
 
-### 🐍 PROGRAMACION III (Software)
-* [Visual Studio Code](https://code.visualstudio.com/) - Entorno de desarrollo (IDE) principal.
-* [Python](https://www.python.org/) - Lenguaje de programación con enfoque en **POO** (Programación Orientada a Objetos).
-* **Librerías de Conexión**: Uso de conectores para vincular la lógica de Python con la base de datos.
+Este proyecto une tres áreas clave de la especialidad para formar un sistema informático completo:
 
-### 🤖 ROBOTICA (Hardware y Simulación)
-* [Arduino IDE](https://www.arduino.cc/en/software) - Programación del microcontrolador en **C++**.
-* [Tinkercad](https://www.tinkercad.com/) - Simulación del circuito electrónico y sensores.
-* **Componentes**: Arduino UNO R3, sensores de temperatura, humedad y presión para el prototipo físico.
--------------------------------------------------------------------------------------------------------------------------
+### 🔬 Club de CIENCIAS (Análisis y Persistencia)
+* **Google Colab** `(Pandas, Matplotlib, Seaborn)` — Procesamiento estadístico del dataset limpio del formulario.
+* **MySQL Workbench** — Diseño, normalización e implementación de la base de datos relacional para el histórico de mediciones.
+* **Power BI** — Análisis visual del clima, patrones ambientales y toma de decisiones orientada a datos.
+
+### 🐍 PROGRAMACIÓN III (Lógica de Software)
+* **Visual Studio Code** — Entorno de desarrollo integrado (IDE) principal del backend.
+* **Python 3** — Implementación de arquitectura de software basada en clases, objetos y herencia (**POO**) para modelar los componentes físicos.
+* **Conectores** `(PySerial / MySQL-Connector)` — Creación del "puente" de comunicación para capturar datos en tiempo real y persistirlos.
+
+### 🤖 ROBÓTICA (Hardware y Simulación)
+* **Arduino IDE** — Programación embebida en **C++** controlando tiempos de muestreo y actuadores.
+* **Tinkercad** — Simulación del circuito, distribución de potencia y lógica de control de alertas de estados.
+* **Hardware utilizado**: Arduino UNO R3, sensores de temperatura/humedad, Display LCD 16x2 (I2C), Buzzer piezoeléctrico y luces LED indicadoras.
+
+---
+
+## 🚀 Estado del Arte / Funcionalidades Logradas
+1. **Modelado de Datos:** Dataset inicial normalizado, libre de duplicados y estructurado para su exportación a base de datos.
+2. **Controlador de Estados Físico:** Simulación funcional en Tinkercad que clasifica rangos térmicos, activa alarmas sonoras y reporta diagnósticos en tiempo real por pantalla LCD de forma autónoma.
+3. **Backend Modular:** Arquitectura de software en Python que abstrae el hardware en código mediante programación orientada a objetos.
+
+---
+
+### 🛡️ Buenas Prácticas de Desarrollo Incorporadas
+* Uso estricto de `.gitignore` para omitir archivos temporales del sistema (`__pycache__/`, `.pyc`).
+* Commits semánticos y estructurados para el control de versiones en Git.
 
 
